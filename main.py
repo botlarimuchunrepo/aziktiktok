@@ -74,7 +74,7 @@ def Download_Video(Link,update, context):
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
     status_msg.edit_text('☘️ Telegramga yuklanmoqda....')
-    message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('Suv belgisiz'),parse_mode=_ParseMode)
+    message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('No Watermark'),parse_mode=_ParseMode)
 #    message.reply_video(video=watermark,supports_streaming=True,caption=caption_text.format('Suv belgi bilan'),parse_mode=_ParseMode)
 
     # Task Done ! So, Deleteing Status Messages
