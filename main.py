@@ -63,9 +63,7 @@ def Download_Video(Link,update, context):
         return
     
     caption_text="""
- ✅ Muvaffaqqiyatli yuklab olindi {} video 🔰
-
- [🦾 AziK ProJecTs](https://t.me/azik_projects)tomonidan!🔰
+@azik_tiktokbot orqali yuklangan {} video.
  """
     
     # Uploading Downloaded Videos to Telegram
