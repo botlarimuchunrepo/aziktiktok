@@ -5,13 +5,10 @@ from telegram.ext import (
     MessageHandler,
     Filters
 )
-from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 import requests
 import os
 import logging
-import json, requests, os, shlex, asyncio, uuid, shutil
-from typing import Tuple
+
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
@@ -43,7 +40,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 def start_handler(update, context):
-    update.message.reply_text(f"Salom! Men TikTokdan yuklovchi botman 🤖!\n\nSiz mendan foydalanib TikTokdan video yoki audio yuklab olishingiz mumkin!!! \n\n@azik_projects - 𝚃𝚘 𝚝𝚑𝚎 𝚏𝚞𝚝𝚞𝚛𝚎 𝚠𝚒𝚝𝚑 𝚞𝚜🦾", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
+    update.message.reply_text('Salom! Men TikTokdan yuklovchi botman 🤖!\n\nSiz mendan foydalanib TikTokdan video yoki audio yuklab olishingiz mumkin!!! \n\n@azik_projects - 𝚃𝚘 𝚝𝚑𝚎 𝚏𝚞𝚝𝚞𝚛𝚎 𝚠𝚒𝚝𝚑 𝚞𝚜🦾')
 
 def about_handler(update, context):
 #    update.message.reply_sticker('CAACAgUAAxkBAAED9kZiDq_LFrib38c7DYu3jNz3ebsolgACJAUAAuTb4FdKtjtZGQ2ukiME')
