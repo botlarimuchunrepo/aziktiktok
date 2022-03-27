@@ -79,7 +79,7 @@ def Download_Video(Link,update, context):
 
     # Task Done ! So, Deleteing Status Messages
     status_msg.delete()
-    status_sticker.delete()
+#    status_sticker.delete()
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
