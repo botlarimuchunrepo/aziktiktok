@@ -10,6 +10,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 import requests
 import os
 import logging
+import json, requests, os, shlex, asyncio, uuid, shutil
+from typing import Tuple
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
