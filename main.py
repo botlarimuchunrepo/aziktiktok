@@ -62,12 +62,7 @@ def Download_Video(Link,update, context):
         status_sticker.delete()
         return
     
-    caption_text="""
-✅ Muvaffaqqiyatli yuklab olindi {} video 🔰
-
-👻 Ishlab chiqilgan:[🦾 AziK ProJecTs](https://t.me/azik_projects)tomonidan!🔰
-[🔥 Dasturchi </> ](https://t.me/azik_developer)
-"""
+    caption_text="""@azik_tiktokbot orqali yuklangan"""
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
@@ -117,3 +112,7 @@ if __name__ == '__main__':
 # https://t.me/SingleDevelopers
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
+#✅ Muvaffaqqiyatli yuklab olindi {} video 🔰
+
+#👻 Ishlab chiqilgan:[🦾 AziK ProJecTs](https://t.me/azik_projects)tomonidan!🔰
+#[🔥 Dasturchi </> ](https://t.me/azik_developer)
