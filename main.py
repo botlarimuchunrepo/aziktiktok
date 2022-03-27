@@ -62,19 +62,17 @@ def Download_Video(Link,update, context):
         status_sticker.delete()
         return
     
-    caption_text="""◇───────────────◇
-
+    caption_text="""
 ✅ Muvaffaqqiyatli yuklab olindi {} video 🔰
 
-👻 Ishlab chiqilgan : [🦾 AziK ProJecTs](https://t.me/azik_projects) tomonidan!🔰
+👻 Ishlab chiqilgan:[🦾 AziK ProJecTs](https://t.me/azik_projects)tomonidan!🔰
 [🔥 Dasturchi </> ](https://t.me/azik_developer)
-
-◇───────────────◇"""
+"""
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
     status_msg.edit_text('☘️ Telegramga yuklanmoqda....')
-    message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('No Watermark'),parse_mode=_ParseMode)
+    message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('Suv belgisiz'),parse_mode=_ParseMode)
 #    message.reply_video(video=watermark,supports_streaming=True,caption=caption_text.format('Suv belgi bilan'),parse_mode=_ParseMode)
 
     # Task Done ! So, Deleteing Status Messages
