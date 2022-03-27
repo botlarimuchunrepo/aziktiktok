@@ -25,14 +25,6 @@ TikTok_Link_Types= ['https://m.tiktok.com','https://vt.tiktok.com','https://tikt
 # ParseMode Type For All Messages
 _ParseMode=ParseMode.MARKDOWN
 
-#buttons
-START_BUTTONS=[
-    [
-        InlineKeyboardButton('Kino kanal 🎞', url='https://t.me/azik_cinema'),
-        InlineKeyboardButton('Proyekt kanalimiz ✌️', url='https://t.me/azik_projects'),
-    ],
-    [InlineKeyboardButton('Dasturchi 🧑‍💻', url='https://t.me/azik_developer')],
-]
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
