@@ -1,6 +1,6 @@
 # TikTok-DL-BOT
 
-🏖  A Telegram BOT To TikTok Download TikTok Vieos - Example For [TikTok API](https://github.com/Single-Developers/API/blob/main/tiktok/Note.md) 🏖
+🏖  A Telegram BOT To TikTok Download TikTok Vieos - Example For [TikTok API](https://github.com/azikdeveloper017) 🏖
 
 
 ![🏖 TikTok Download URL Generator 🏖](https://telegra.ph/file/05ce45e35c9c93c8d001f.jpg)
