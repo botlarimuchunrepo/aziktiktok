@@ -5,6 +5,8 @@ from telegram.ext import (
     MessageHandler,
     Filters
 )
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 import requests
 import os
 import logging
