@@ -24,7 +24,14 @@ TikTok_Link_Types= ['https://m.tiktok.com','https://vt.tiktok.com','https://tikt
 # ParseMode Type For All Messages
 _ParseMode=ParseMode.MARKDOWN
 
-
+#buttons
+START_BUTTONS=[
+    [
+        InlineKeyboardButton('Kino kanal 🎞', url='https://t.me/azik_cinema'),
+        InlineKeyboardButton('Proyekt kanalimiz ✌️', url='https://t.me/azik_projects'),
+    ],
+    [InlineKeyboardButton('Dasturchi 🧑‍💻', url='https://t.me/azik_developer')],
+]
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
@@ -32,7 +39,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 def start_handler(update, context):
-    update.message.reply_text('Salom  ')
+    update.message.reply_text(f"Salom! Men TikTokdan yuklovchi botman 🤖!\n\nSiz mendan foydalanib TikTokdan video yoki audio yuklab olishingiz mumkin!!! \n\n@azik_projects - 𝚃𝚘 𝚝𝚑𝚎 𝚏𝚞𝚝𝚞𝚛𝚎 𝚠𝚒𝚝𝚑 𝚞𝚜🦾", True, reply_markup=InlineKeyboardMarkup(START_BUTTONS))
 
 def about_handler(update, context):
 #    update.message.reply_sticker('CAACAgUAAxkBAAED9kZiDq_LFrib38c7DYu3jNz3ebsolgACJAUAAuTb4FdKtjtZGQ2ukiME')
