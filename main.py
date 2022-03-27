@@ -32,11 +32,11 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 def start_handler(update, context):
-    update.message.reply_text('Salom [{}](tg://user?id={}) ')
+    update.message.reply_text('Salom  ')
 
 def about_handler(update, context):
-    update.message.reply_sticker('CAACAgUAAxkBAAED9kZiDq_LFrib38c7DYu3jNz3ebsolgACJAUAAuTb4FdKtjtZGQ2ukiME')
-    update.message.reply_text('[🏖 TikTok Download API 🏖](https://github.com/Single-Developers/API/blob/main/tiktok/Note.md)\n\n[🔥 SL Developers </> 🇱🇰](https://t.me/SL_Developers)',parse_mode=_ParseMode)
+#    update.message.reply_sticker('CAACAgUAAxkBAAED9kZiDq_LFrib38c7DYu3jNz3ebsolgACJAUAAuTb4FdKtjtZGQ2ukiME')
+    update.message.reply_text('[🦾 AziK ProJecTs](https://t.me/azik_projects)\n\n[🔥 Dasturchi </>🇺🇿 ](https://t.me/azik_developer)',parse_mode=_ParseMode)
     
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
@@ -48,17 +48,17 @@ def Download_Video(Link,update, context):
     watermark=None
 
     status_msg=message.reply_text('🚀 Serverimga yuklab olinmoqda ....')
-    status_sticker=message.reply_sticker('CAACAgUAAxkBAAED9jhiDqYeGjENlCjftByz0au6n4YAASEAAnUEAALpa8lXL9cvxeTK-2AjBA')
+#    status_sticker=message.reply_sticker('CAACAgUAAxkBAAED9jhiDqYeGjENlCjftByz0au6n4YAASEAAnUEAALpa8lXL9cvxeTK-2AjBA')
 
     # Getting Download Links Using API
     try:
        req=requests.get(API+Link).json()
        no_watermark=req['no_watermark']
        watermark= req['watermark']
-       print('Download Links Generated \n\n\n'+str(req)+'\n\n\n')
+       print('Yuklab olish havolalarini yaratish \n\n\n'+str(req)+'\n\n\n')
     except:
-        print('Download Links Generate Error !!!')
-        status_msg.edit_text('⁉️ TikTok Downloader API Error !!! Report To Developer : @SL_Developers')
+        print('Yuklab olish havolalarida xatolik !!!')
+        status_msg.edit_text('⁉️ TikTok Downloader API xatosi !!! Dasturchiga xabar bering: @azik_developer')
         status_sticker.delete()
         return
     
@@ -66,16 +66,16 @@ def Download_Video(Link,update, context):
 
 ✅ Muvaffaqqiyatli yuklab olindi {} video 🔰
 
-👻 Ishlab chiqilgan : [🦾 AziK ProJecTs ](https://t.me/azik_projects) tomonidan!🔰
+👻 Ishlab chiqilgan : [🦾 AziK ProJecTs](https://t.me/azik_projects) tomonidan!🔰
 [🔥 Dasturchi </> ](https://t.me/azik_developer)
 
 ◇───────────────◇"""
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
-    status_msg.edit_text('☘️ 𝚃Telegramga yuklanmoqda....')
-    message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('No Watermark'),parse_mode=_ParseMode)
-    message.reply_video(video=watermark,supports_streaming=True,caption=caption_text.format('Watermark'),parse_mode=_ParseMode)
+    status_msg.edit_text('☘️ Telegramga yuklanmoqda....')
+    message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('Suv belgisiz'),parse_mode=_ParseMode)
+#    message.reply_video(video=watermark,supports_streaming=True,caption=caption_text.format('Suv belgi bilan'),parse_mode=_ParseMode)
 
     # Task Done ! So, Deleteing Status Messages
     status_msg.delete()
